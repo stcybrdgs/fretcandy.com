@@ -7,11 +7,7 @@ cover:
   image: fretchart.png
   alt: 'Cover image for My Post'
   # caption: 'My amazing cover image'
-tags:
-  ['FretCharts', 'Widgets', 'Demos']
-  # - 'FretCharts'
-  # - 'Widgets'
-  # - 'Demos'
+tags: ['FretCharts', 'Widgets', 'Demos']
 draft: false
 searchHidden: false
 ---

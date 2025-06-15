@@ -9,22 +9,26 @@ enableEmoji: true # (Default: false)
 # nav menu
 menu:
   main:
-    # - identifier: home # Existing menu item example
-    #   name: Home
-    #   url: /
-    #   weight: 10
-    - identifier: archives # Existing menu item example
-      name: Archives
-      url: /archives/
-      weight: 20
-    - identifier: search # New menu item for search
+    - identifier: about # nav menu item
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: search # nav menu item
       name: Search
       url: /search/
-      weight: 30
-    - identifier: tags # Existing menu item example
+      weight: 2
+    - identifier: tags # nav menu item
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 3
+    - identifier: archives # nav menu item
+      name: Archives
+      url: /archives/
+      weight: 4
+    - identifier: contact # nav menu item
+      name: Contact
+      url: /contact/
+      weight: 5
 
 # fuse.js enabled search feature
 outputs: # for search page
@@ -46,19 +50,10 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     includeMatches: true
-    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    # keys: ['title', 'permalink', 'summary', 'content']
-  # assets:
-  # favicon: '/favicon.ico'
-  # favicon16x16: '/favicon-16x16.png'
-  # favicon32x32: '/favicon-32x32.png'
-  # apple_touch_icon: '/apple-touch-icon.png'
-  description: 'A beautiful and fast Hugo theme.'
   ShowShareButtons: true # (Default: false)
   ShowReadingTime: true # (Default: false)
   ShowBreadCrumbs: true # (Default: true)
   ShowCodeCopyButtons: true # (Default: false)
   ShowPostNavLinks: true
   ShowToc: true
-  images: ['images/placeholder-image.jpg']
 

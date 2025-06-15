@@ -4,6 +4,6 @@ layout: 'search' # necessary for search
 url: '/search/'
 # description: "Description for Search"
 summary: 'search'
-placeholder: 'Search for a post...'
+placeholder: 'Search for something...'
 ---
 
