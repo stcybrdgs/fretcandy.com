@@ -63,4 +63,9 @@ params:
   images: ['images/placeholder-image.jpg']
 
 # build & publish
-publishDir: 'public'
+# [build]
+publish: 'public'
+command: 'hugo'
+# [context.production.environment]
+HUGO_VERSION: '0.147.8'
+
