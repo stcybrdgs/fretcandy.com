@@ -24,11 +24,15 @@
         line-height: 1.6; */
       }
       .container {
-        max-width: 650px;
-        margin: 0 auto;
-        background: white;
+        /* max-width: 650px; */
+        /* margin: 0 auto; */
+        position: relative;
+        text-align: center;
+
         padding: 30px;
+        border: 1px solid #1c1c1c;
         border-radius: 12px;
+        background: rgb(255, 255, 255);
         /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1); */
       }
       .container h2 {
@@ -49,6 +53,7 @@
       /* Widget container with drag and resize capabilities */
       .widget-container {
         position: relative;
+        text-align: center;
         display: inline-block;
         margin: 20px auto;
         background: #fefefe;
@@ -166,15 +171,23 @@
         transform: translateY(0);
       }
       .info {
+        position: relative;
+        display: inline-block;
         margin-top: 20px;
-        padding: 15px;
-        background: #e8f4fd;
+        width: 200px;
+        padding: 12px;
+        background: #fff;
         border-radius: 8px;
         font-size: 14px;
         border-left: 4px solid #3498db;
+        border-right: 4px solid #3498db;
       }
       .info strong {
         color: #1c1c1c;
+      }
+
+      .info ul li {
+        margin: 8px 0;
       }
       #dotCount {
         color: #3498db;
@@ -228,13 +241,17 @@
         .container {
           padding: 20px;
           margin: 10px;
+          position: relative;
+          text-align: center;
         }
         .widget-container {
+          position: relative;
           width: 100% !important;
           position: relative !important;
           left: 0 !important;
           top: 0 !important;
         }
+
         .controls {
           gap: 8px;
         }
@@ -448,13 +465,6 @@
         ><br />
         <strong>Widget position:</strong> <span id="widgetPosition">0, 0</span>
       </div>
-
-      <!-- Instructions:  -->
-      <ul>
-        <li>Drag the widget to move it around.</li>
-        <li>Use the corner handles to resize.</li>
-        <li>Click fret intersections to add/remove dots.</li>
-      </ul>
     </div>
 
     <script>
