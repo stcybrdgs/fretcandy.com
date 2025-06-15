@@ -1,0 +1,64 @@
+# base
+baseURL: 'https://fretcandy.com/' # Update with your site"s URL (No default - REQUIRED)
+languageCode: 'en-us'
+title: 'FretCandy' # Update with your site title (No default)
+copyright: '© 2025 FretCandy'
+theme: ['PaperMod'] # (No default - You must specify a theme)
+enableEmoji: true # (Default: false)
+
+# nav menu
+menu:
+  main:
+    # - identifier: home # Existing menu item example
+    #   name: Home
+    #   url: /
+    #   weight: 10
+    - identifier: archives # Existing menu item example
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: search # New menu item for search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags # Existing menu item example
+      name: Tags
+      url: /tags/
+      weight: 20
+
+# fuse.js enabled search feature
+outputs: # for search page
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+# global params
+params:
+  cover:
+    responsiveImages: true
+    linkFullImages: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    includeMatches: true
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    # keys: ['title', 'permalink', 'summary', 'content']
+  # assets:
+  # favicon: '/favicon.ico'
+  # favicon16x16: '/favicon-16x16.png'
+  # favicon32x32: '/favicon-32x32.png'
+  # apple_touch_icon: '/apple-touch-icon.png'
+  description: 'A beautiful and fast Hugo theme.'
+  ShowShareButtons: true # (Default: false)
+  ShowReadingTime: true # (Default: false)
+  ShowBreadCrumbs: true # (Default: true)
+  ShowCodeCopyButtons: true # (Default: false)
+  ShowPostNavLinks: true
+  ShowToc: true
+  images: ['images/placeholder-image.jpg']
+
