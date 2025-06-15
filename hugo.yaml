@@ -62,3 +62,5 @@ params:
   ShowToc: true
   images: ['images/placeholder-image.jpg']
 
+# build & publish
+publishDir: 'public'
